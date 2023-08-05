@@ -11,3 +11,14 @@
 	object-fit: cover;
 	object-position: left top;
 }
+
+
+.form, .form-section {
+	display: flex;
+	flex-direction: column;
+}
+
+
+.form {
+	background-color: var(--cor-clara-principal);
+}
