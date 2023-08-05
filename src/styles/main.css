@@ -3,3 +3,10 @@
 	max-width: 1000px;
 	grid-template-columns: 1fr minmax(400px, 1fr);
 }
+
+
+.img-form {
+	width: 100%;
+	object-fit: cover;
+	object-position: left top;
+}
