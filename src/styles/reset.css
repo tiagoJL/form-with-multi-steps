@@ -1,0 +1,15 @@
+:root, html, * {
+	font-size: 16px;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+	color: var(--cor-escura-principal);
+	font-family: Times New Roman;
+}
+
+h1 {font-size: 1.9rem;}
+
+h2 {font-size: 1.6rem;}
+
+label {font-size: 1.3rem;}
