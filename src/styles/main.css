@@ -1,7 +1,7 @@
 .form-wrapper {
 	display: grid;
-	max-width: 1000px;
-	grid-template-columns: 1fr minmax(400px, 1fr);
+	max-width: 800px;
+	grid-template-columns: 2fr minmax(400px, 3fr);
 }
 
 
