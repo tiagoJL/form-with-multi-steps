@@ -6,6 +6,45 @@
 	<link rel='stylesheet' type='text/css' href='styles/style.css'>
 	<title>Form</title>
 </head>
+<body>
+	<div class="all">
+		<main class="form">
+			<img src="imgs/img-form.jpg" class="img-form" alt='abstratc image' width='657' height='656'>
+			<form class="form" method="get">
+				<h1 class="operation-name">Sign Up</h1>
+				<ol class="steps">
+					<li>1</li>
+					<li>2</li>
+				</ol>
+				<input class="step" id="first" type="radio" name="step">
+				<input class="step" id="second" type="radio" name="step">
+	
+				<section class="form-section" id="personal-information">
+					<h2>Personal Information</h2>
+					<label for="first-name">First Name:</label>
+					<input type="text" name="first-name" id="first-name">
+					<label for="last-name">Last Name:</label>
+					<input type="text" name="last-name" id="last-name">
+					<label for="date-of-birth">Date of Birth</label>
+					<input type="date" name="date-of-birth" id="date-of-birth">
+					<label class="fakebutton" for="second">Next, Contact information ></label>
+				</section>
+				
+				<section class="form-section" id="contact-information">
+					<h2>Contact Information</h2>
+					<label for="address">Address:<label>
+					<input type="text" name="address" id="address">
+					<label for="city">City:</label>
+					<input type="text" name="city" id="city">
+					<label for="state">State:</label>
+					<input type="text" name="state" id="state">
+					<label class="fakebutton" for="first">< Back, Personal Information</label>
+					<input type="button" name="finish" value="Finish >">
+				</section>
+			</form>
+		</main>
+	</div>
 
+</body>
 
 </html>
