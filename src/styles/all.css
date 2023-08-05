@@ -1,0 +1,8 @@
+.all {
+	width: 100vw;
+	height: 100vh;
+	background-color: var(--cor-escura-principal);
+	display: grid;
+	justify-items: center;
+	align-items: center;
+}
