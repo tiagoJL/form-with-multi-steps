@@ -1,5 +1,5 @@
 .form {
-	padding: 20px 30px; 
+	padding: 20px 35px; 
 }
 
 .operation-name {
@@ -16,17 +16,19 @@ input.step {display: none;}
 .form-section input {
 	padding: 5px;
 	font-size: 1.3rem;
+	text-transform: capitalize;
 }
+
+.form-section input[type='date'] {text-transform: lowercase;}
 
 .form-section input:focus {
 	outline: none;
-	border-bottom: 2px solid var(--cor-escura-principal);
 }
 
 .form-section label {
 	margin-bottom: 10px;
 	margin-top: 15px;
-	font-weight: bold;
+	font-weight: normal;
 }
 
 .form-section h2 {
@@ -54,17 +56,17 @@ input[type='button'] {
 
 ol.steps {
 	display: flex;
-	margin: 25px 0;
+	margin: 35px 0;
 }
 
 ol.steps li {
 	position: relative;
-	padding: 10px 15px;
+	padding: 5px 10px;
 	font-size: 1.3rem;
 	margin-right: 20px;
 	background-color: #F5F5F5;
 	color: var(--cor-escura-secundaria);
-	font-weight: bold;
+	font-weight: normal;
 }
 
 ol.steps li:first-child {
@@ -76,7 +78,7 @@ ol.steps li:first-child::after {
 	height: 5px;
 	width: 20px;
 	right: -20px;
-	top: calc(50% - 5px);
+	top: calc(50% - 3px);
 	background-color: var(--cor-escura-principal);
 	position: absolute;
 	
