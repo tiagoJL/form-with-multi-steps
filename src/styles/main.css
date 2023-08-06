@@ -3,6 +3,7 @@
 	max-width: 630px;
 	height: 700px;
 	grid-template-columns: 2.2fr 3fr;
+	position: relative;
 }
 
 .img-form {
@@ -10,7 +11,24 @@
 	height: 100%;
 	object-fit: cover;
 	object-position: left top;
+	position: relative;
 }
+
+.form-wrapper::after {
+	position: absolute;
+	content: " ";
+	background-image: url('../imgs/waves-line.svg');
+	width: 100px;
+	height: 100px;
+	background-size: 100px;
+	background-repeat: no-repeat;
+	top: -50px;
+	left: -50px;
+	transition-property: top, left;
+	transition-duration: 0.6s;
+}
+
+.form-wrapper.form-wrapper-step-two-active::after {top: 0; left: 0}
 
 .form, .form-section {
 	display: flex;
