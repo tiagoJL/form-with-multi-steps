@@ -1,0 +1,85 @@
+.form {
+	padding: 20px 30px; 
+}
+
+.operation-name {
+	font-size: 2rem;
+}
+
+input.step {display: none;}
+
+.form-section {display: none;}
+
+#first:checked ~ #personal-information {display: flex;}
+#second:checked ~ #contact-information {display: flex;}
+
+.form-section input {
+	padding: 5px;
+	font-size: 1.3rem;
+}
+
+.form-section input:focus {
+	outline: none;
+	border-bottom: 2px solid var(--cor-escura-principal);
+}
+
+.form-section label {
+	margin-bottom: 8px;
+	margin-top: 13px;
+	font-weight: bold;
+}
+
+.form-section h2 {
+	color: var(--cor-escura-secundaria);
+	font-size: 1.7rem;
+}
+
+label.fakebutton {
+	margin-top: 25px;
+	cursor: pointer;
+	color: #7C0FD7;
+}
+
+.fakebutton:hover {
+	text-decoration: underline;
+}
+
+input[type='button'] {
+	background-color: var(--cor-escura-principal);
+	color: var(--cor-clara-principal);
+	padding: 10px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+ol.steps {
+	display: flex;
+	margin: 25px 0;
+}
+
+ol.steps li {
+	position: relative;
+	padding: 10px 15px;
+	font-size: 1.3rem;
+	margin-right: 20px;
+	background-color: #F5F5F5;
+	color: var(--cor-escura-secundaria);
+	font-weight: bold;
+}
+
+ol.steps li:first-child {
+	background-color: var(--cor-escura-principal);
+}
+
+ol.steps li:first-child::after {
+	content: "";
+	height: 5px;
+	width: 20px;
+	right: -20px;
+	top: calc(50% - 5px);
+	background-color: var(--cor-escura-principal);
+	position: absolute;
+	
+}
+
+.step-active {background-color: var(--cor-escura-principal);}
