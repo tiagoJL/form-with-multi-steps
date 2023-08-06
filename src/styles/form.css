@@ -17,7 +17,7 @@ input.step {display: none;}
 	top: 160px;
 	left: 65px;
 	transition-property: visibility, opacity, z-index, left;
-	transition-duration: 0.5s;
+	transition-duration: 0.7s;
 }
 
 #first:checked ~ #personal-information, #second:checked ~ #contact-information {
@@ -84,6 +84,8 @@ ol.steps li {
 	background-color: #F5F5F5;
 	color: var(--cor-escura-secundaria);
 	font-weight: normal;
+	transition-property: background-color;
+	transition-duration: 0.6s;
 }
 
 ol.steps li:first-child {
@@ -93,12 +95,15 @@ ol.steps li:first-child {
 ol.steps li:first-child::after {
 	content: "";
 	height: 5px;
-	width: 20px;
-	right: -20px;
+	width: 0px;
+	right: 0px;
 	top: calc(50% - 3px);
 	background-color: var(--cor-escura-principal);
 	position: absolute;
-	
+	transition-property: right, width;
+	transition-duration: 0.5s;
 }
 
-.step-active {background-color: var(--cor-escura-principal);}
+ol.steps li.next-active:first-child::after {right: -20px; width: 20px;}
+
+ol.steps li.step-active {background-color: var(--cor-escura-principal);}
