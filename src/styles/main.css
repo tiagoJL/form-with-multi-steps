@@ -1,6 +1,6 @@
 .form-wrapper {
 	display: grid;
-	max-width: 700px;
+	max-width: 630px;
 	height: 700px;
 	grid-template-columns: 2.2fr 3fr;
 }
