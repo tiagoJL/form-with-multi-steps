@@ -1,5 +1,6 @@
 .form {
-	padding: 20px 35px; 
+	padding: 20px 35px;
+	position: relative;
 }
 
 .operation-name {
@@ -8,10 +9,26 @@
 
 input.step {display: none;}
 
-.form-section {display: none;}
+.form-section {
+	z-index: -1;
+	position: absolute;
+	visibility: hidden;
+	opacity: 0;
+	top: 160px;
+	left: 65px;
+	transition-property: visibility, opacity, z-index, left;
+	transition-duration: 0.5s;
+}
 
-#first:checked ~ #personal-information {display: flex;}
-#second:checked ~ #contact-information {display: flex;}
+#first:checked ~ #personal-information, #second:checked ~ #contact-information {
+	visibility: visible;
+	opacity: 1;
+	z-index: 1;
+	top: 160px;
+	left: 35px;
+	animation-direction: fowards;
+	position: absolute;
+}
 
 .form-section input {
 	padding: 5px;
